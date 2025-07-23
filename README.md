@@ -36,8 +36,6 @@ An **AI-powered, voice-interactive assistant** inspired by Marvel's *Iron Man* m
 | LLM                | OpenAI / Gemini / Local                  |
 | TTS                | [Cartesia](https://cartesia.ai)          |
 | Session Manager    | [LiveKit](https://livekit.io)            |
-| WebRTC Integration | `livekit-client` or `livekit-server-sdk` |
-| Async I/O          | `asyncio`, `aiohttp`, `websockets`       |
 
 ---
 
