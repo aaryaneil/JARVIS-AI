@@ -21,14 +21,8 @@ An **AI-powered, voice-interactive assistant** inspired by Marvel's *Iron Man* m
 
 ## 🛠️ System Architecture
 
-```
-graph TD
-    A[🎙️ Microphone Input] --> B[🧠 Deepgram STT]
-    B --> C[🤖 LLM / Gemini Realtime]
-    C --> D[🗣️ Cartesia TTS]
-    D --> E[📡 LiveKit Session (Audio Out)]
-    C --> F[📹 LiveKit Session (Optional Video Out)]
-```
+<img width="747" height="151" alt="image" src="https://github.com/user-attachments/assets/c4450e0f-90ad-4381-9b6d-6c561c374a4f" />
+
 
 
 ---
@@ -52,8 +46,8 @@ graph TD
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/jarvis-ai-voice-agent.git
-cd jarvis-ai-voice-agent
+git clone https://github.com/yourusername/JARVIS-AI.git
+cd JARVIS-AI
 ```
 
 ### 2. Create a Virtual Environment
@@ -104,25 +98,9 @@ Make sure your microphone is enabled and accessible.
 
 ---
 
-## 🧩 Example: Core Logic (Simplified)
-
-```python
-# Speech-to-Text (Deepgram)
-transcript = deepgram_client.transcribe(audio_stream)
-
-# LLM Query
-response = llm.generate_response(transcript)
-
-# Text-to-Speech (Cartesia)
-audio_out = cartesia_client.text_to_speech(response)
-
-# Send to LiveKit
-livekit_session.send_audio(audio_out)
-```
-
 ---
 
-## 📹 Gemini Realtime: Video Support
+## 📹 Gemini Realtime: Video Support (Optional)
 
 If you enable video input:
 
@@ -136,7 +114,6 @@ If you enable video input:
 
 * **Low Latency**: Optimized for real-time audio feedback (< 300ms round-trip)
 * **Modular**: Easily swap LLMs or TTS engines
-* **Secure**: Uses API keys stored in `.env` and not hardcoded
 
 ---
 
