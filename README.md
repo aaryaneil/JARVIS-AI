@@ -22,7 +22,13 @@ An **AI-powered, voice-interactive assistant** inspired by Marvel's *Iron Man* m
 ## 🛠️ System Architecture
 
 ```mermaid
-<details> <summary>✅ Click to view fixed Mermaid diagram</summary> <pre><code>```mermaid graph TD A[🎙️ Microphone Input] --> B[🧠 Deepgram STT] B --> C[🤖 LLM / Gemini Realtime] C --> D[🗣️ Cartesia TTS] D --> E[📡 LiveKit Session (Audio Out)] C --> F[📹 LiveKit Session (Optional Video Out)] ``` </code></pre> </details>
+graph TD
+    A[🎙️ Microphone Input] --> B[🧠 Deepgram STT]
+    B --> C[🤖 LLM / Gemini Realtime]
+    C --> D[🗣️ Cartesia TTS]
+    D --> E[📡 LiveKit Session (Audio Out)]
+    C --> F[📹 LiveKit Session (Optional Video Out)]
+
 ```
 
 ---
